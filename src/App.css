@@ -1,0 +1,1148 @@
+/* ========================================
+   BEAUTY STYLE - ESTILOS GENERALES
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ========================================
+   INICIO
+======================================== */
+
+.beauty-home {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: white;
+}
+
+
+/* ========================================
+   BARRA DE NAVEGACIÓN
+======================================== */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: #000;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: #ff1493;
+  font-size: 35px;
+  font-family: cursive;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff1493;
+}
+
+
+/* ========================================
+   ACCIONES DE NAVEGACIÓN
+======================================== */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+}
+
+.nav-actions button {
+  padding: 12px 25px;
+}
+
+
+/* ========================================
+   NAVEGACIÓN DE PÁGINAS INTERNAS
+======================================== */
+
+.navbar-interna {
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid rgba(255, 79, 163, 0.15);
+}
+
+.logo-link {
+  color: #ff1493;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.navbar-interna nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-interna nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-interna nav a:hover {
+  color: #ff1493;
+}
+
+
+/* ========================================
+   BOTONES GENERALES
+======================================== */
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.btn-login {
+  background: transparent;
+  color: white;
+  border: 1px solid #ff1493;
+  margin-right: 10px;
+}
+
+.btn-register,
+.btn-primary {
+  background: #ff1493;
+  color: white;
+}
+
+.btn-register:hover,
+.btn-primary:hover {
+  background: #ff69b4;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid #ff1493;
+  margin-left: 15px;
+}
+
+
+/* Botones dentro de la navegación */
+
+.navbar-interna .btn-login {
+  background: transparent;
+  color: white;
+  border: 1px solid #ff1493;
+}
+
+.navbar-interna .btn-register {
+  background: #ff1493;
+  color: white;
+}
+
+.navbar-interna .btn-login:hover {
+  background: rgba(255, 20, 147, 0.15);
+}
+
+.navbar-interna .btn-register:hover {
+  background: #ff69b4;
+}
+
+
+/* ========================================
+   PORTADA / HERO
+======================================== */
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.hero-text {
+  width: 45%;
+}
+
+.hero-text h2 {
+  font-size: 60px;
+  line-height: 1.1;
+  color: white;
+  text-shadow: 0 0 15px #ff1493;
+}
+
+.hero-text h2 span {
+  color: #ff1493;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: 420px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 0 30px #ff1493;
+  transition: 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ========================================
+   VENTAJAS
+======================================== */
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.advantages div {
+  background: #171717;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.advantages h3 {
+  color: #ff1493;
+}
+
+
+/* ========================================
+   SERVICIOS
+======================================== */
+
+.servicios-page {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: white;
+}
+
+.servicios-content {
+  min-height: calc(100vh - 90px);
+  background: #0d0d0d;
+  color: white;
+  padding: 70px 8%;
+}
+
+.servicios-content h1 {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.servicios-content h1 span {
+  color: #ff4fa3;
+}
+
+.servicios-content .descripcion {
+  color: #bdbdbd;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+
+/* Contenedor de las 8 tarjetas */
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Tarjeta individual */
+
+.card-servicio {
+  background: #181818;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  padding: 28px 22px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 79, 163, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 79, 163, 0.25);
+}
+
+.card-servicio h2 {
+  color: #ff4fa3;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card-servicio p {
+  color: #d0d0d0;
+  line-height: 1.5;
+  min-height: 70px;
+}
+
+.card-servicio button {
+  margin-top: 15px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #ff4fa3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-servicio button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+/* ========================================
+   LOGIN Y REGISTRO
+======================================== */
+
+.auth-page {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: white;
+}
+
+
+/* Contenido debajo de la barra */
+
+.auth-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+
+/* Tarjeta de formulario */
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #181818;
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  box-shadow: 0 0 35px rgba(255, 79, 163, 0.18);
+}
+
+.registro-card {
+  max-width: 480px;
+}
+
+
+/* Encabezado del formulario */
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-header h1 {
+  margin: 0 0 10px;
+  color: white;
+  font-size: 35px;
+}
+
+.auth-header h1 span {
+  color: #ff4fa3;
+}
+
+.auth-header p {
+  margin: 0;
+  color: #aaa;
+  font-size: 16px;
+}
+
+
+/* ========================================
+   CAMPOS DE FORMULARIOS
+======================================== */
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #101010;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #777;
+}
+
+.form-group input:focus {
+  border-color: #ff4fa3;
+  box-shadow: 0 0 8px rgba(255, 79, 163, 0.2);
+}
+
+
+/* ========================================
+   BOTÓN DE FORMULARIO
+======================================== */
+
+.auth-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #ff1493;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background: #ff69b4;
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   TEXTO INFERIOR DE LOGIN / REGISTRO
+======================================== */
+
+.auth-footer {
+  text-align: center;
+  color: #aaa;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.auth-footer a {
+  color: #ff4fa3;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Volver al inicio */
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-home:hover {
+  color: #ff4fa3;
+}
+
+
+/* ========================================
+   CITAS
+======================================== */
+
+.citas-page {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: white;
+}
+
+.citas-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+
+/* Tarjeta de agendamiento */
+
+.citas-card {
+  width: 100%;
+  max-width: 500px;
+  background: #181818;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 0 35px rgba(255, 79, 163, 0.18);
+  border: 1px solid rgba(255, 79, 163, 0.15);
+}
+
+
+/* Encabezado */
+
+.citas-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.citas-header h1 {
+  margin: 0 0 10px;
+  color: white;
+  font-size: 38px;
+}
+
+.citas-header h1 span {
+  color: #ff4fa3;
+}
+
+.citas-header p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+
+/* Formulario de citas */
+
+.citas-card form {
+  width: 100%;
+}
+
+.citas-card .form-group {
+  width: 100%;
+}
+
+.citas-card .form-group input,
+.citas-card .form-group select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Select */
+
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: #101010;
+  color: white;
+  border: 1px solid #333;
+  font-size: 15px;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #ff4fa3;
+}
+
+
+/* Fecha y hora */
+
+.form-group input[type="date"],
+.form-group input[type="time"] {
+  color-scheme: dark;
+}
+
+
+/* ========================================
+   CONFIRMACIÓN DE CITA
+======================================== */
+
+.cita-confirmacion {
+  width: 100%;
+  max-width: 550px;
+  background: #181818;
+  padding: 50px 40px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 79, 163, 0.25);
+  box-shadow: 0 0 40px rgba(255, 79, 163, 0.20);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Icono de confirmación */
+
+.confirmacion-icono {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ff1493;
+  color: white;
+
+  font-size: 45px;
+  font-weight: bold;
+
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.45);
+}
+
+
+/* Título */
+
+.cita-confirmacion h1 {
+  margin: 0 0 15px;
+  color: white;
+  font-size: 38px;
+}
+
+.cita-confirmacion h1 span {
+  color: #ff4fa3;
+}
+
+
+/* Texto */
+
+.cita-confirmacion p {
+  color: #d0d0d0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.confirmacion-detalle {
+  color: #aaa !important;
+  font-size: 15px !important;
+  margin-top: 10px;
+}
+
+
+/* Botones de confirmación */
+
+.confirmacion-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.confirmacion-acciones a {
+  text-decoration: none;
+}
+
+.confirmacion-acciones button {
+  padding: 13px 24px;
+}
+
+.confirmacion-acciones .btn-login {
+  margin-right: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar-interna nav {
+    gap: 15px;
+  }
+
+}
+
+
+/* ========================================
+   RESPONSIVE - CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    gap: 15px;
+  }
+
+  .navbar-interna {
+    padding: 20px;
+  }
+
+  .navbar-interna nav {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 360px;
+    height: 420px;
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .servicios-container {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios-content {
+    padding: 50px 20px;
+  }
+
+  .servicios-content h1 {
+    font-size: 32px;
+  }
+
+  .auth-content {
+    padding: 40px 20px;
+  }
+
+  .auth-card {
+    padding: 30px 22px;
+  }
+
+  .auth-header h1 {
+    font-size: 30px;
+  }
+
+  .citas-content {
+    padding: 40px 20px;
+  }
+
+  .citas-card {
+    padding: 30px 22px;
+  }
+
+  .citas-header h1 {
+    font-size: 30px;
+  }
+
+  .cita-confirmacion {
+    padding: 40px 25px;
+  }
+
+  .cita-confirmacion h1 {
+    font-size: 30px;
+  }
+
+  .confirmacion-acciones {
+    flex-direction: column;
+  }
+
+  .confirmacion-acciones button {
+    width: 100%;
+  }
+
+}
+
+/* ========================================
+   CONTACTO
+======================================== */
+
+.contacto-page {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: white;
+}
+
+.contacto-content {
+  min-height: calc(100vh - 90px);
+  padding: 70px 8%;
+}
+
+.contacto-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contacto-header h1 {
+  margin: 0 0 15px;
+  color: white;
+  font-size: 42px;
+}
+
+.contacto-header h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #ff4fa3;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+.contacto-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contacto-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.contacto-card {
+  background: #181818;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 0 25px rgba(255, 79, 163, 0.12);
+}
+
+.contacto-card h2 {
+  color: #ff4fa3;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contacto-card > p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.contacto-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #292929;
+}
+
+.contacto-dato strong {
+  color: white;
+  font-size: 15px;
+}
+
+.contacto-dato span {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.contacto-card textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #101010;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+}
+
+.contacto-card textarea::placeholder {
+  color: #777;
+}
+
+.contacto-card textarea:focus {
+  border-color: #ff4fa3;
+  box-shadow: 0 0 8px rgba(255, 79, 163, 0.2);
+}
+
+
+/* ========================================
+   RESPONSIVE - CONTACTO
+======================================== */
+
+@media (max-width: 700px) {
+
+  .contacto-content {
+    padding: 50px 20px;
+  }
+
+  .contacto-header h1 {
+    font-size: 34px;
+  }
+
+  .contacto-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-card {
+    padding: 28px 22px;
+  }
+
+}
+
+
+/* ========================================
+   RESUMEN DE CITA CONFIRMADA
+======================================== */
+
+.resumen-cita {
+  margin-top: 30px;
+  padding: 22px;
+  background: #101010;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  border-radius: 18px;
+  text-align: left;
+}
+
+.resumen-cita h2 {
+  color: #ff4fa3;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.resumen-item:last-child {
+  border-bottom: none;
+}
+
+.resumen-item strong {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.resumen-item span {
+  color: white;
+  font-size: 14px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+
+  .resumen-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .resumen-item span {
+    text-align: left;
+  }
+
+}
+
+/* ========================================
+   MIS CITAS
+======================================== */
+
+/* Contenedor principal de la página Mis Citas */
+.mis-citas-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Tarjeta principal */
+.mis-citas-card {
+  width: 100%;
+  max-width: 650px;
+  background: #181818;
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  box-shadow: 0 0 35px rgba(255, 79, 163, 0.18);
+  box-sizing: border-box;
+}
+
+/* Encabezado de Mis Citas */
+.mis-citas-card .citas-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Título */
+.mis-citas-card .citas-header h1 {
+  margin: 0 0 10px;
+  color: white;
+  font-size: 38px;
+}
+
+/* Palabra destacada */
+.mis-citas-card .citas-header h1 span {
+  color: #ff4fa3;
+}
+
+/* Descripción */
+.mis-citas-card .citas-header p {
+  color: #aaa;
+}
+
+/* Cada cita */
+.cita-item {
+  background: #101010;
+  border: 1px solid rgba(255, 79, 163, 0.15);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* Nombre del servicio */
+.cita-item h2 {
+  color: #ff4fa3;
+  font-size: 21px;
+  margin: 0 0 18px;
+}
+
+/* Información de la cita */
+.cita-item p {
+  color: #d0d0d0;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Botón de estado */
+.cita-item button {
+  margin-top: 15px;
+}
+
+/* Botón para agendar otra cita */
+.mis-citas-accion {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Enlace del botón */
+.mis-citas-accion a {
+  text-decoration: none;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+  .mis-citas-content {
+    padding: 40px 20px;
+  }
+
+  .mis-citas-card {
+    padding: 25px 20px;
+  }
+
+  .mis-citas-card .citas-header h1 {
+    font-size: 30px;
+  }
+
+  .cita-item {
+    padding: 20px;
+  }
+
+  .mis-citas-accion button {
+    width: 100%;
+  }
+
+}
